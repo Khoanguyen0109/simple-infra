@@ -1,0 +1,13 @@
+environment                               = "dev"
+cluster_name                              = "dev"
+aws_region                                = "eu-west-1"
+resources_requests_memory                 = "768Mi"
+resources_requests_cpu                    = "100m"
+resources_limits_memory                   = "1024Mi"
+resources_limits_cpu                      = "500m"
+resources_hpa_cpu                         = "60"        # Percent
+resources_hpa_memory                      = "820Mi"     # Average value. Calculated by 80% of resources_limits_memory
+min_replica_count                         = 1
+max_replica_count                         = 2
+database_secret_key                       = "dev/backend/platform_cms_dev/documentdb"
+database_name                             = "cms"
